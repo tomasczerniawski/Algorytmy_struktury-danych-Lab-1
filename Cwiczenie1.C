@@ -47,7 +47,47 @@ while(x<n){
   return 0;
   }
 ```
+# Zadanie3.c
+```
+#include <stdio.h>
 
+int main() {
+  int a,x,y,n,h,xn;
+  int arr[]= {2, 4, 8, 9, 10};
+  printf("wprowadz a: ");
+  scanf("%d", &a);
+  
+  printf("wprowadz jaka liczbe chcecie wybrac z ciagu \n");
+  scanf("%d", &xn);
+  
+  for(int i=0; i<sizeof(arr)/sizeof(int);i++)
+    {
+      
+      if(xn==i)
+      {
+        x=arr[i];
+      }
+      
+    }
+  
+  printf("wprowadz do jakiej wartosci x liczymy y: ");
+  scanf("%d", &n);
+  
+  printf("wprowadz krok: ");
+  scanf("%d", &h); 
+  printf("%i\n",x);
+  
+while(x<n){
+  
+    x=x+h;
+    y=a*x*x;
+    
+    printf("wybrales z ciagi liczby %d \n", y);
+  };
+  return 0;
+  }
+
+```
 # Zadanie_1_ciagi
 ```
 #include <stdio.h>
