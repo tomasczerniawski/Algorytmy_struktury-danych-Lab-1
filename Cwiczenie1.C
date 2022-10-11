@@ -47,3 +47,41 @@ while(x<n){
   return 0;
   }
 ```
+
+# Zadanie_1_ciagi
+```
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+int main()
+{
+    int i = 0;
+    srand(1);
+  
+    for(i=1; i<=10; i++)
+    {
+        printf("Wywolanie %d wygenerowalo liczbe o wartosci: %d\n", i, rand());
+    }
+    return 0;
+```
+  # Zadanie_2_ciagi
+  ```
+  #include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+int main()
+{
+  
+    int i = 0,n;
+   printf("wprowadz ile liczb generowac: ");
+  
+    scanf("%d", &n);
+    srand(1);
+  
+    for(i=1; i<=n; i++)
+    {
+        printf("Wywolanie %d wygenerowalo liczbe o wartosci: %d\n", i, rand());
+    }
+    return 0;
+}
+  ```
