@@ -20,6 +20,10 @@ while(x<7){
 return 0;
   }
 ```
+
+
+
+
 # Zadanie2.C
 ```
 #include <stdio.h>
@@ -47,6 +51,11 @@ while(x<n){
   return 0;
   }
 ```
+
+
+
+
+
 # Zadanie3.c
 ```
 #include <stdio.h>
@@ -88,6 +97,9 @@ while(x<n){
   }
 
 ```
+
+
+
 # Zadanie_1_ciagi
 ```
 #include <stdio.h>
@@ -104,6 +116,9 @@ int main()
     }
     return 0;
 ```
+  
+  
+  
   # Zadanie_2_ciagi
   ```
   #include <stdio.h>
