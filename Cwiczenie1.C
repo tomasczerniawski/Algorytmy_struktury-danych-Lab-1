@@ -4,16 +4,20 @@
 #include <stdio.h>
 
 int main() {
+  
 int a,x,y;
- x=0;
- a=2;
-   while(x<7){
-    x=x+2;
-    y=a*x*x;
+  
+  x=0;
+  a=2;
+  
+while(x<7){
+  
+  x=x+2;
+  y=a*x*x;
     
-   printf(" %d \n", y);
+  printf(" %d \n", y);
   }
-  return 0;
+return 0;
   }
 ```
 # Zadanie2.C
@@ -21,14 +25,20 @@ int a,x,y;
 #include <stdio.h>
 
 int main() {
-int a,x,y,n,h;
- x=0;
- a=2;
-   printf("wprowadz do jakiej zmiennej musi zkaczyc kod: ");
-    scanf("%d", &n);
-   printf("wprowadz krok: ");
-    scanf("%d", &h);
-  while(x<n){
+  int a,x,y,n,h;
+  
+ 
+  printf("wprowadz a: ");
+  scanf("%d", &a);
+  
+  printf("wprowadz do jakiej wartosci x liczymy y: ");
+  scanf("%d", &n);
+  
+  printf("wprowadz krok: ");
+  scanf("%d", &h);
+  
+while(x<n){
+  
     x=x+h;
     y=a*x*x;
     
