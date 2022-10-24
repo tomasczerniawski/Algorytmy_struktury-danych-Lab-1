@@ -1,3 +1,13 @@
+/*
+Tomas Czerniawski, Student
+* -----------------
+ Laboratorium 1. Zadanie przyklad
+ Oblicza funkcja y = ax^2 znaczenia, gdy a i x zmeniaja sie jednoczesnie: a=1
+krokiem 0.5, x=2 do 6 krokiem 2
+* -----------------
+2022-10-11
+*/
+
 # Zadanie1.C
 
 ```
