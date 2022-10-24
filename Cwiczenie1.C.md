@@ -1,12 +1,12 @@
-/*
+
 Tomas Czerniawski, Student
 * -----------------
- Laboratorium 1. Zadanie przyklad
+ Laboratorium 1. Zadanie 1 przyklad
  Oblicza funkcja y = ax^2 znaczenia, gdy a i x zmeniaja sie jednoczesnie: a=1
 krokiem 0.5, x=2 do 6 krokiem 2
 * -----------------
 2022-10-11
-*/
+
 
 # Zadanie1.C
 
@@ -33,6 +33,12 @@ return 0;
 
 
 
+Tomas Czerniawski, Student
+* -----------------
+ Laboratorium 1. Zadanie 2 przyklad
+ Obliczyc funkcja y = ax^2 znaczenia, gdy a - stale. x - zmieniase z x0 do xn, krokiem hx
+* -----------------
+2022-10-11
 
 # Zadanie2.C
 ```
@@ -64,10 +70,16 @@ while(x<n){
 
 
 
-
+Tomas Czerniawski, Student
+* -----------------
+ Laboratorium 1. Zadanie 3 przyklad
+ Obliczyc funkcja y = ax^2 znaczenia, gdy a - stale, x jest wybierany z tablicy X(n)
+* -----------------
+2022-10-11
 
 # Zadanie3.c
 ```
+
 #include <stdio.h>
 
 int main() {
@@ -108,7 +120,12 @@ while(x<n){
 
 ```
 
-
+Tomas Czerniawski, Student
+* -----------------
+ Laboratorium 1. Zadanie 1 przyklad
+ Generowanie liczb pseudolosowych
+* -----------------
+2022-10-11
 
 # Zadanie_1_ciagi
 ```
@@ -128,7 +145,13 @@ int main()
 ```
   
   
-  
+  Tomas Czerniawski, Student
+* -----------------
+ Laboratorium 1. Zadanie 2 przyklad
+ Należy wygenerować n kolejnych wyrazów ciągu arytmetycznego.
+* -----------------
+2022-10-11
+
   # Zadanie_2_ciagi
   ```
   #include <stdio.h>
