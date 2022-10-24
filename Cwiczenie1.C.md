@@ -17,7 +17,7 @@ int main() {
   
 int a,x,y;
   
-  x=0;
+  x=0,5;
   a=2;
   
 while(x<7){
@@ -45,8 +45,8 @@ Tomas Czerniawski, Student
 #include <stdio.h>
 
 int main() {
-  int a,x,y,n,h;
-  
+  int a,y,n,h;
+  int x=0, n=0;
  
   printf("wprowadz a: ");
   scanf("%d", &a);
@@ -142,6 +142,7 @@ int main()
         printf("Wywolanie %d wygenerowalo liczbe o wartosci: %d\n", i, rand());
     }
     return 0;
+    }
 ```
   
   
