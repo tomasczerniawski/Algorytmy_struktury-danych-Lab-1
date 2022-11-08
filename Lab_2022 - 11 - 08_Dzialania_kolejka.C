@@ -20,31 +20,20 @@ void display();
 void main() {
  
   float item;
-  int choice;
-  while (choice != 4) {
-    printf("\n1. Insert\n2. Remove\n3. Display\n4. Exit\n\n");
-    printf("Podaj wybor:");
-    scanf("%d", &choice);
-    switch (choice) {
-    case 1:
-      printf("Podaj liczbe: ");
+  
+  
+   for(int i = 1; i<6;i++){ 
+     
+      printf("Podaj 5 liczbow %d:  " , i);
       scanf("%f", &item);
-      insert(item);
-      break;
-    case 2:
-      remov();
-      break;
-    case 3:
-      display();
-      break;
-    case 4:
-      break;
-    default:
-      printf("wprowadz liczba pomiedzy 1-4\n");
-      break;
-    }
-  }
-  return;
+     
+    insert(item);
+     
+     }
+    
+    remov();
+     
+    display();
 }
 
 // Funkcii
