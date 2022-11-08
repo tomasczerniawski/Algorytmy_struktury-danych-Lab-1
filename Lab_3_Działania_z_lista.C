@@ -43,3 +43,14 @@
     }
 
     // Funkcii
+
+float finde(int value, struct Item *head,int arr[], int n)
+{
+    int i;
+    for (i = 0; i < n; i++)
+        if (arr[i] == value)
+            return i;
+     
+      // If the value is not found
+    return -1;
+}
