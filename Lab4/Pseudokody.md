@@ -1,5 +1,5 @@
-## Rekurencja
-# Zadania 2 Napisz funkcję rekurencyjną do obliczenia n-tej liczby ciągu Fibonacciego
+##Rekurencja
+#Zadania 2 Napisz funkcję rekurencyjną do obliczenia n-tej liczby ciągu Fibonacciego
 
 
 fib(int n)
