@@ -54,7 +54,19 @@ int f(int n,int k)
 }
 
 ```
+# Rekurencja
+ Zadania 6 Napisac funkcję rekurencyjną do obliczenia silni n>20 . Na podzstawie listy jednokierunkowej.
+```
+int silnia_rek2(int n) {
 
+   if (n == 0)
 
+       return 1;
+
+   return n * silnia_rek1(n - 1);
+
+}
+
+```
 
 
