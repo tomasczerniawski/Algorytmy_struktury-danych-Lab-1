@@ -1,3 +1,7 @@
+// Tomas Czerniawski student
+// Ciąg Fibonacciego
+// 2022-11-28
+
 #include <stdio.h>
 
 int fib(int n){
