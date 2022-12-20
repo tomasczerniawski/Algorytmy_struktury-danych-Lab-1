@@ -7,7 +7,7 @@ int main(void) {
 
 int i,n ,arr[1000];
    
-     // bubbleSort();
+     // bubble_Sort();
       insertion_Sort() ;
       
 }
