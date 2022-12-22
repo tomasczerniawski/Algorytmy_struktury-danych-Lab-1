@@ -8,7 +8,7 @@
 
 #include "quickSort.h"
 
-#include "GENEROWANIE.h"
+#include "Generowanie_randomowych_liczb.h"
 
 int main(void) {
 
