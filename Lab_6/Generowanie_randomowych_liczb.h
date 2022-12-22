@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <errno.h>
   
-int main(void)
+int generacja()
 {
     
     FILE* fptr;
