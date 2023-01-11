@@ -1,3 +1,7 @@
+// Tomas Czerniawski student
+// Sprawdzic czy słowo jest anagram.
+// 2023-01-11
+
 #include <stdio.h>  
 #include <string.h>  
 int main ()  
