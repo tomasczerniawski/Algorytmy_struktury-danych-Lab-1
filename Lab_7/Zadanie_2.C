@@ -1,4 +1,7 @@
-# Zadanie 1
+// Tomas Czerniawski student
+// Znaleźć ile jest liczb w tekście.
+// 2023-01-11
+
 
 #include <stdio.h>
 #include <string.h>
