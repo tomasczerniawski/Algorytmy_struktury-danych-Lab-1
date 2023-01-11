@@ -1,3 +1,7 @@
+// Tomas Czerniawski student
+// Znaleźć i skasować te same długie słowo w tekście.
+// 2023-01-11
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
