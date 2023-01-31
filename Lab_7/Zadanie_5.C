@@ -17,8 +17,8 @@ int main ()
     scanf ("%s", arr2);  
       
     
-    len1 = strlen (arr1);  
-    len2 = strlen (arr2);  
+    int len1 = (int) strlen (arr1);  
+    int len2 = (int) strlen (arr2);  
       
   
     if (len1 == len2)  
