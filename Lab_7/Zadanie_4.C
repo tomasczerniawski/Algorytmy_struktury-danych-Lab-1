@@ -10,7 +10,7 @@
 int main (void)
 {
 	char matrica[1000][3000];
-	int i = 0, j = 0, k = 0, len1 = 0, len2 = 0, l = 0, length;
+	int i = 0, j = 0, k = 0, l = 0;
  
 	
  char str[] = " Eos rem non ut aliquam corrupti. Dolore expedita laboriosam vel architecto eligendi. Illo dolor ut sequi. Et enim dolores totam. Ut vero iure. Omnis eveniet quidem neque tempora.";
