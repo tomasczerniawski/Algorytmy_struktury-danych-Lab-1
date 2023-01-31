@@ -4,7 +4,7 @@
 
 #include <stdio.h>  
 #include <string.h>  
-int main ()  
+int main (void)  
 {  
  
     char arr1[30], arr2[30];  
