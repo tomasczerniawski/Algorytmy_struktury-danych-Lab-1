@@ -35,7 +35,7 @@ int main (void)
  
 	j = 0;
 	
-	 length = i + 1;
+	
 	 
 	  strcpy(large, matrica[0]); 
 	  
