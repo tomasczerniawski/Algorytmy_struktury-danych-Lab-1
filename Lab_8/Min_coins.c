@@ -8,8 +8,8 @@
 int *getMinCoins(int *coinList, int n, int value, int *coinCount);
 
 int main(void) {
-  int coinList[] = {1, 2, 5};
-  int value = 69;
+  int coinList[] = {1, 3, 4};
+  int value = 125;
 
   int len = sizeof(coinList) / sizeof(coinList[0]);
   
@@ -18,11 +18,11 @@ int main(void) {
 
   int *result = getMinCoins(coinList, len, value, &coinCount);
   if (!result) {
-    printf("Error: failed to get the minimum coins\n");
+    printf("Błąd: nie udało się uzyskać minimalnej liczby monet\n");
     return 1;
   }
 
-  printf("The value %d can be represented by these coins:", value);
+  printf("Wartość %d może być reprezentowana przez te monety:", value);
   for (int i = 0; i < coinCount; i++) {
     printf("%d, ", result[i]);
   }
