@@ -32,18 +32,18 @@ int binarySearch(int vet[], int l, int r, int x)
 }
 
 
-main(void){
+int main(void){
     
     int vet[N];
     int i,n;
   
-      srand(time(NULL));
+     srand(( unsigned )time(NULL));
   
-    for(i=0;i<1000;i++){
+    for(i=0;i<N;i++){
       
         vet[i]=(rand()%138573);
     }
-    printf("Wprowadzenie n. To wiele liczb bedzie lososwo wygenerowano Musi byc != 0 \n");
+    printf("Wprowadzenie ilosc elementow ktora bedzie otsortowana w tablice. Musi byc wiecej 0 i mniej %d \n", N);
 		  scanf("%d", &n);
   
     for(i=0;i<n;i++){
@@ -55,7 +55,7 @@ main(void){
       
  int fel;
   
-    for (int i = 0; i < n; i++) { 
+    for (i = 0; i < n; i++) { 
       
         for (int j = i+1; j < n; j++) {  
           
@@ -73,7 +73,7 @@ main(void){
     
     printf("Elementy są posortowane rozsnaco: \n"); 
   
-    for (int i = 0; i < n; i++) { 
+    for (i = 0; i < n; i++) { 
       
         printf("%d ", vet[i]);    
     }    
