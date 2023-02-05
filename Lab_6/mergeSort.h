@@ -3,7 +3,7 @@
 #include <stdio.h>
 #include <errno.h>
 #include <stdio.h>
-#include <time.h>
+
 #define N 10000
 int arr[N];
 
@@ -47,18 +47,7 @@ void merge(int *arr, int l, int m, int r)
   }
 }
 
-    
-         
-   
-    
-    t = clock() - t;
-    double time_taken = ((double)t)/CLOCKS_PER_SEC;
-    
-    //printowanie tabeli
-    
-    
-
-	printf("\n sortowanie scalieniem trwalo %f seconds \n", time_taken);
+	
 } 
 
 void mergeSort(int arr[], int l, int r) {
