@@ -9,7 +9,7 @@
 
 //Posortowałem tabelke rosnaco bo niewiedziłem czy bylo trzeba to zrobić z algorytmem MergeSort
 
-int vet[N];
+
 
 int binarySearch(int vet[], int l, int r, int x)
 {
@@ -34,7 +34,7 @@ int binarySearch(int vet[], int l, int r, int x)
 
 main(void){
     
-    
+    int vet[N];
     int i,n;
   
       srand(time(NULL));
@@ -51,7 +51,7 @@ main(void){
         
 
     }
-    int arr_size = sizeof(vet) / sizeof(vet[0]);
+
       
  int fel;
   
