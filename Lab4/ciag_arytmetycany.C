@@ -16,7 +16,7 @@ if(n==1){
 }  
         }
 
-int main()
+int main(void)
 {
     int r,a1;
     int n;
