@@ -12,22 +12,25 @@ krokiem 0.5, x=2 do 6 krokiem 2
 ```
 #include <stdio.h>
 
+#include <stdio.h>
+
 int main() {
-  
-int a,x,y;
-  
-  x=0,5;
-  a=2;
-  
-while(x<7){
-  
-  x=x+2;
-  y=a*x*x;
-    
-  printf(" %d \n", y);
+  int a, x, y;
+  int x0 = 0;
+  int xn = 7;
+
+  x = x0;
+  a = 2;
+
+  while (x < xn) {
+    x = x + 2;
+    y = a * x * x;
+
+    printf("%d\n", y);
   }
-return 0;
-  }
+
+  return 0;
+}
 ```
 
 
@@ -44,27 +47,30 @@ Tomas Czerniawski, Student
 #include <stdio.h>
 
 int main() {
-  int a,y,n,h;
-  int x=0, n=0;
- 
-  printf("wprowadz a: ");
+  int a, y, n, h;
+  int x = 0;
+
+  printf("Wprowadź a: ");
   scanf("%d", &a);
   
-  printf("wprowadz do jakiej wartosci x liczymy y: ");
+  printf("Wprowadź początkową wartość x (x0): ");
+  scanf("%d", &x);
+  
+  printf("Wprowadź końcową wartość x (xn): ");
   scanf("%d", &n);
   
-  printf("wprowadz krok: ");
+  printf("Wprowadź krok (h): ");
   scanf("%d", &h);
   
-while(x<n){
-  
-    x=x+h;
-    y=a*x*x;
+  while (x < n) {
+    y = a * x * x;
+    printf("y = %d\n", y);
     
-    printf(" %d \n", y);
+    x = x + h;
   }
+  
   return 0;
-  }
+}
 ```
 
 
@@ -82,40 +88,32 @@ Tomas Czerniawski, Student
 #include <stdio.h>
 
 int main() {
-  int a,x,y,n,h,xn;
-  int arr[]= {2, 4, 8, 9, 10};
-  printf("wprowadz a: ");
+  int a, x, y, n, h;
+  int xn, arr[] = {2, 4, 8, 9, 10};
+
+  printf("Wprowadź a: ");
   scanf("%d", &a);
   
-  printf("wprowadz jaka liczbe chcecie wybrac z ciagu \n");
+  printf("Wprowadź numer x, który chcesz wybrać z tablicy X(n): ");
   scanf("%d", &xn);
   
-  for(int i=0; i<sizeof(arr)/sizeof(int);i++)
-    {
-      
-      if(xn==i)
-      {
-        x=arr[i];
-      }
-      
-    }
+  x = arr[xn];
   
-  printf("wprowadz do jakiej wartosci x liczymy y: ");
+  printf("Wprowadź do jakiej wartości x liczymy y: ");
   scanf("%d", &n);
   
-  printf("wprowadz krok: ");
-  scanf("%d", &h); 
-  printf("%i\n",x);
+  printf("Wprowadź krok (h): ");
+  scanf("%d", &h);
   
-while(x<n){
-  
-    x=x+h;
-    y=a*x*x;
+  while (x < n) {
+    y = a * x * x;
+    printf("y = %d\n", y);
     
-    printf("wybrales z ciagi liczby %d \n", y);
-  };
-  return 0;
+    x = x + h;
   }
+  
+  return 0;
+}
 
 ```
 
@@ -131,17 +129,18 @@ Tomas Czerniawski, Student
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
+
 int main()
 {
     int i = 0;
-    srand(1);
-  
+    srand(time(NULL));
+
     for(i=1; i<=10; i++)
     {
         printf("Wywolanie %d wygenerowalo liczbe o wartosci: %d\n", i, rand());
     }
     return 0;
-    }
+}
 ```
   
   
