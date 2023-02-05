@@ -101,8 +101,10 @@ main(void){
       
         vet[i]=(rand()%138573);
     }
-    printf("Wprowadzenie n. Musi byc != 0 \n");
-		  scanf("%d", &n);
+   printf("Wprowadzenie ilosc elementow ktora bedzie otsortowana w tablice. Musi byc wiecej 0 i mniej %d \n", N);
+while (n <=0 || n > N) {
+ scanf("%d", &n);
+}
   
     for(i=0;i<n;i++){
         printf("%d\n", vet[i]);
