@@ -1,26 +1,28 @@
-#include "bubbleSort.h"
+#include "bubble_sort.h"
 
-#include "insertionSort.h"
+#include "insertion_sort.h"
 
-#include "selectionSort.h"
+#include "selection_sort.h"
 
-#include "mergeSort.h"
+#include "merge_sort.h"
 
-#include "quickSort.h"
+#include "quick_sort.h"
 
-#include "Generowanie_randomowych_liczb.h"
+#include "generate_random_numbers.h"
 
 int main(void) {
-
-int i,n,count;
-//generacja();
+int n, count;
    
-    // bubble_Sort();
-      //insertion_Sort() ;
-      //selectionSort();
-   // mergeSort(arr, 0, n - 1);
-   quick_Sort(arr,0,n-1);
+//generate_random_numbers();
    
+//bubble_sort();
    
-     
+//insertion_sort();
+   
+//selection_sort();
+   
+//merge_sort(arr, 0, n - 1);
+   
+quick_sort(arr, 0, n - 1);
+return 0;
 }
