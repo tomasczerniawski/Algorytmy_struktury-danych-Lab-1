@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <errno.h>
 #include <stdio.h>
-#include <time.h>
+
 
 int bubble_Sort() {
    
@@ -20,9 +20,9 @@ int bubble_Sort() {
   
         i++; 
     }
-  clock_t t;
 
-    t = clock();
+
+ 
     //sama logika sortowania
     
      for(i = 0; i < n - 1; i++){       
@@ -43,15 +43,11 @@ int bubble_Sort() {
 
     }
    
-  t = clock() - t;
+
     
     for (i = 0; i < n; i++)
         printf("%d \n ", arr[i]);
-  
-
-   double time_taken = ((double)t)/CLOCKS_PER_SEC;
-
-	printf("\n sortowanie scalieniem trwalo %f seconds \n", time_taken);
+ 
 
     return 0;
 }
