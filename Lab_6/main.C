@@ -10,10 +10,13 @@
 
 #include "generate_random_numbers.h"
 
+#define N 10000
+
 int main(void) {
-int n, count;
+   int n = N;
+int count;
    
-//generate_random_numbers();
+//generuj_randomowe_liczby(arr, n);
    
 //bubble_sort();
    
@@ -21,8 +24,14 @@ int n, count;
    
 //selection_sort();
    
-//merge_sort(arr, 0, n - 1);
+//mergeSort(arr, 0, n - 1);
+   
+//    printf("Posortowana tablica: \n");
+// printArray(arr, n);
+
    
 quick_sort(arr, 0, n - 1);
 return 0;
 }
+
+
