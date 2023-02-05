@@ -82,22 +82,20 @@ void mergeSort(int vet[], int l, int r)
 
 void printArray(int A[], int n)
 {
-    int i;
-    for (i = 0; i < n; i++)
-      
-        printf("%d ", A[i]);
-        printf("\n");
+    for (int i = 0; i < n; i++)
+     printf("%d ", A[i]);
+    printf("\n");
 }
 
 
-main(void){
+int main(void){
     
     
     int i,n;
   
-      srand(time(NULL));
+  srand(( unsigned )time(NULL));
   
-    for(i=0;i<1000;i++){
+    for(i=0;i<N;i++){
       
         vet[i]=(rand()%138573);
     }
@@ -111,7 +109,7 @@ while (n <=0 || n > N) {
         
 
     }
-    int arr_size = sizeof(vet) / sizeof(vet[0]);
+  
       mergeSort(vet, 0, n - 1);
  
     printf("\nSorted array is \n");
