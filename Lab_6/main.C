@@ -13,33 +13,47 @@
 #define N 10000
 
 int main(void) {
-   int n = N;
-int count;
-   
-//generuj_randomowe_liczby(arr, n);
-   
-   
-   clock_t t;
+int n = N;
+int arr[N];
+generuj_randomowe_liczby(arr, n);
 
-    t = clock();
-    bubble_Sort();
-    t = clock() - t;
+clock_t t;
 
-    double time_taken = ((double)t) / CLOCKS_PER_SEC;
-    printf("Czas sortowania bąbelkowego wynosi: %f sekund\n", time_taken);
+// Bubble sort
+t = clock();
+bubble_Sort(arr, n);
+t = clock() - t;
+double time_taken = ((double)t) / CLOCKS_PER_SEC;
+printf("Czas sortowania bąbelkowego wynosi: %f sekund\n", time_taken);
 
-   
-//insertion_sort();
-   
-//selection_sort();
-   
-//mergeSort(arr, 0, n - 1);
-   
-//    printf("Posortowana tablica: \n");
-// printArray(arr, n);
+// Insertion sort
+t = clock();
+insertion_sort(arr, n);
+t = clock() - t;
+time_taken = ((double)t) / CLOCKS_PER_SEC;
+printf("Czas sortowania przez wstawianie wynosi: %f sekund\n", time_taken);
 
-   
+// Selection sort
+t = clock();
+selection_sort(arr, n);
+t = clock() - t;
+time_taken = ((double)t) / CLOCKS_PER_SEC;
+printf("Czas sortowania przez wybieranie wynosi: %f sekund\n", time_taken);
+
+// Merge sort
+t = clock();
+merge_sort(arr, 0, n - 1);
+t = clock() - t;
+time_taken = ((double)t) / CLOCKS_PER_SEC;
+printf("Czas sortowania przez scalanie wynosi: %f sekund\n", time_taken);
+
+// Quick sort
+t = clock();
 quick_sort(arr, 0, n - 1);
+t = clock() - t;
+time_taken = ((double)t) / CLOCKS_PER_SEC;
+printf("Czas sortowania szybkiego wynosi: %f sekund\n", time_taken);
+
 return 0;
 }
 
