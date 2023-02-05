@@ -12,7 +12,7 @@ int fib(int n){
   
 }
 
-int main()
+int main(void)
   
 {
 int x;
