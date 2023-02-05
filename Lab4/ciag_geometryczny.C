@@ -17,7 +17,7 @@ int n_rekurencja(int a1, int q, int n){
     
 }
 
-int main()
+int main(void)
 {
     int q,a1;
     int n;
