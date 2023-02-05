@@ -16,7 +16,7 @@ int l_paskala(int wiersz, int kolumna) {
     return (l_paskala(wiersz - 1, kolumna - 1) + l_paskala(wiersz - 1, kolumna));
 }
 
-int main()
+int main(void)
 {
      
   int wiersz,kolumna;
