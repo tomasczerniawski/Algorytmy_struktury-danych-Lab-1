@@ -8,32 +8,8 @@
 int arr[N];
 
 void merge(int *arr, int l, int m, int r)
-{ 
- int i = 0, j, n = 0;
-  
-   
-  
-    FILE* fptr; 
-  
-    fptr = fopen("random.txt", "r"); 
-  
-    while (fscanf(fptr, "%d", &arr[i]) == 1) 
-    {
-      
-        n++; 
-  
-        i++; 
-    }
-    
-    clock_t t;
-
-    t = clock();
-     
-     //logika sortowania
-    
-   
-     
-  int k;
+{
+  int i = 0, j, k;
   int n1 = m - l + 1;
   int n2 = r - m;
   int L[n1], R[n2];
@@ -69,6 +45,7 @@ void merge(int *arr, int l, int m, int r)
     j++;
     k++;
   }
+}
 
     
          
