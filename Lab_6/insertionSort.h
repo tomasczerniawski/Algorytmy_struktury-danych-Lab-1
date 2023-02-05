@@ -19,9 +19,6 @@ int insertion_Sort()
     i++;
   }
 
-  clock_t t;
-  t = clock();
-
   // logika sortowania
   int element;
   for (i = 1; i < n; i++)
@@ -36,14 +33,10 @@ int insertion_Sort()
     arr[j + 1] = element;
   }
 
-  t = clock() - t;
-  double time_taken = ((double)t) / CLOCKS_PER_SEC;
 
   // printowanie tabeli
   for (i = 0; i < n; i++)
     printf("%d\n", arr[i]);
-
-  printf("\nSortowanie przez wstawianie trwało %f sekund\n", time_taken);
 
   return 0;
 }
