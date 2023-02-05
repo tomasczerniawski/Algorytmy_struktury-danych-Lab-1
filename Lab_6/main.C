@@ -18,7 +18,16 @@ int count;
    
 //generuj_randomowe_liczby(arr, n);
    
-//bubble_sort();
+   
+   clock_t t;
+
+    t = clock();
+    bubble_Sort();
+    t = clock() - t;
+
+    double time_taken = ((double)t) / CLOCKS_PER_SEC;
+    printf("Czas sortowania bąbelkowego wynosi: %f sekund\n", time_taken);
+
    
 //insertion_sort();
    
@@ -33,5 +42,9 @@ int count;
 quick_sort(arr, 0, n - 1);
 return 0;
 }
+
+
+
+
 
 
