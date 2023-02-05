@@ -189,19 +189,15 @@ void next(ItemType **head, float value) {
     return;
   }
 }
-void previuos(ItemType **head, float value) {
-
-    ItemType *variable = (ItemType *)malloc(sizeof(ItemType));
-
-    variable->value = value;
-    variable->next = (*head);
-    variable->prev = NULL;
-
-  if ((*head) != NULL)
-      
-    (*head)->prev = variable;
-    (*head) = variable;
-    
+void previous(ItemType **head, float value) {
+  ItemType *newNode = (ItemType *) malloc(sizeof(ItemType));
+  newNode->value = value;
+  newNode->next = *head;
+  newNode->prev = NULL;
+  if(*head != NULL) {
+    (*head)->prev = newNode;
+  }
+  *head = newNode;
 }
 void insert(ItemType *head, float value) {
 
